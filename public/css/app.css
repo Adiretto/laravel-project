@@ -1,0 +1,614 @@
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/*page 1*/
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background:white;
+}
+
+
+.title_1{
+    position: absolute;
+    margin: 0 auto;
+    width: 530px;
+    margin-top: 200px;
+}
+.title_1 h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.title_1 h2{
+    color: #4AE290;
+    font-size: 60px;
+    font-weight: bold;
+}
+.title_1 p {
+    font-weight: normal;
+    font-size: 24px;
+    color: #DEDEE3;
+}
+.hero{
+    margin-left: 35%;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
+/*navigation*/
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header.fixed{
+    position: fixed;
+    width: 100%;
+    background: black;
+    z-index: 1;
+}
+.nav_bar{
+    background: black;
+}
+
+.nav a{
+    color: #FFFFFF;
+    transition: color 0.5s linear;
+}
+.nav a:hover{
+    color: #4AE290;
+}
+.nav a.active{
+    color: #4AE290;
+}
+.nav-item{
+    color: green;
+    padding-right: 30px;
+}
+.nav-link{
+    transition: color 0.5s linear;
+}
+.nav-link:hover{
+    color: green;
+}
+.nav-link:active{
+    color: green;
+}
+.container_register{
+    height: 100%;
+    margin-top: 20px;
+}
+.container_register input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.container_register input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.container_register hr {
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+.registerbtn:hover {
+    opacity:1;
+}
+.input_box{
+    display: flex;
+    justify-content: flex-end;
+}
+.eye{
+    right: 20px;
+    position: absolute;
+    margin: 20px auto;
+    cursor: pointer;
+}
+#eye_icon_1,#eye_icon_2{
+    display: none;
+}
+#eye_icon_slash_1,#eye_icon_slash_2{
+}
+/*page 2*/
+.container2{
+    justify-content: center;
+    height: 80vh;
+}
+.container2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/*.container2_text{
+	width: 780px;
+	margin: 0 auto;
+	margin-top: 10%;
+	flex-direction: column;
+}*/
+.container2_text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.container2_text p {
+    color: #595962;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*page 3*/
+.container3{
+    height: 80vh;
+    justify-content: center;
+    padding-top: 70px;
+}
+.container3 h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.column_training{
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.column_training_2{
+    padding:1%;
+    flex-direction: column;
+    justify-content: center	;
+    flex-wrap: wrap;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.content:hover{
+    opacity: 1;
+}
+#Image img{
+    width: 95%;
+    height: auto;
+}
+
+.training_programs_btn{
+    position: absolute;
+    margin-left: 1%;
+    margin-top: -2%;
+}
+
+/*page 4*/
+.container4{
+    height: 100vh;
+    padding-top: 70px;
+}
+.container4 h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.pricing{
+    display: block;
+    margin: 50px 20px 0 20px;
+    background: #1313160D;
+    text-align: center;
+    height: 500px;
+}
+.pricing h1{
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.btn_pricing{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.pricing p {
+    margin-bottom: 20px;
+}
+.pricing img {
+    margin-top: -3px;
+    max-width: 100%;
+}
+.btn_pricing_1{
+    margin-top: -30px;
+}
+.btn_pricing_2{
+    margin-top: 30px;
+}
+/*page 5*/
+.container5{
+    height: 80vh;
+    display: flex;
+    padding-top: 70px;
+}
+.container5 h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.Community{
+    margin-top: 7px;
+    margin-left: -7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.community_section{
+    height: 475px;
+}
+.Community_title{
+    margin-right: 15px;
+}
+.Community img{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+.Community:hover{
+    opacity: 1;
+}
+.paragraph_com{
+    width: 90%;
+    margin: -30% auto;
+}
+.community_section p{
+    width: 100%;
+    font-style: italic;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-family: Open Sans, serif;
+    text-align: center;
+}
+/*page 6*/
+.container6{
+    width: 100%;
+    margin-top: 150px;
+    height: 90vh;
+    background: black;
+    padding-top: 70px;
+    bottom: 0;
+}
+.last_image{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 300px;
+}
+.container6 img{
+    max-width: 100%;
+    height: auto;
+}
+.container6_text{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 80px;
+}
+.container6 h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.container6 p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+@media(max-width: 1230px){
+    /*container1*/
+    .container1 h1{
+        font-size:50px ;
+    }
+    .container1 h2{
+        font-size:50px ;
+    }
+    .container1 p{
+        font-size: 20px;
+    }
+    .title_1{
+        margin-top: 20%;
+    }
+    /*container 2*/
+    .container2 h1{
+        font-size: 50px;
+    }
+    .container2 p{
+        font-size: 20px;
+    }
+    .container2_text{
+        margin-top: 16%;
+    }
+    /*container5*/
+    .container5 h1{
+        font-size: 45px;
+    }
+    .container5 p{
+        font-size: 16px;
+        width: 17.5%;
+    }
+
+    /*container6*/
+    .container6 h1{
+        font-size: 50px;
+    }
+    .container6 p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 992px){
+    /*container1*/
+    .container1 h1{
+        font-size:45px ;
+    }
+    .container1 h2{
+        font-size:45px ;
+    }
+    .container1 p{
+        font-size: 18px;
+    }
+    .title_1{
+        margin-top: 25%;
+    }
+    .container1 img{
+        margin-right: 0;
+    }
+    /*container 2*/
+    .container2 h1{
+        font-size: 45px;
+    }
+    .container2 p{
+        font-size: 18px;
+    }
+    .container2_text{
+        margin-top: 27%;
+        height: 70vh;
+    }
+    /*container3*/
+    .container3{
+        margin-bottom: 200px;
+    }
+    .content{
+        margin-bottom: 30px;
+    }
+    #Image{
+        justify-content: center;
+    }
+    .column_training_2 img{
+        width: 120%;
+        height: auto;
+    }
+    /*container4*/
+    .container4{
+        height: 170vh;
+    }
+    .pricing_plan{
+        display: flex;
+        justify-content: center;
+    }
+    /*container5*/
+    .container5{
+        height: 260vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .container5 h1{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .container5 p{
+        font-size: 25px;
+        width: 40%;
+    }
+    .community_section{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .Community{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    /*container6*/
+    .container6 h1{
+        font-size: 45px;
+    }
+    .container6 p {
+        font-size: 18px;
+    }
+    .container6_text{
+        margin-left: 40%;
+    }
+    .last_image{
+        margin-left: 20%;
+    }
+}
+@media(max-width: 768px){
+    /*container1*/
+    .container1 h1{
+        font-size:40px ;
+    }
+    .container1 h2{
+        font-size:40px ;
+    }
+    .container1 p{
+        font-size: 16px;
+    }
+    .title_1{
+        width: 90%;
+        margin-top: 32%;
+    }
+    .container1 img{
+        margin-left: 15%;
+    }
+    /*container3*/
+    .container3{
+        height: 320vh;
+    }
+    .content{
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content button{
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 53% auto ;
+    }
+    #training_programs_btn{
+        margin-top: 49%;
+    }
+    /*container4*/
+    .container4{
+        height: 250vh;
+    }
+    /*container5*/
+    .container5{
+        height: 230vh;
+    }
+    .Community{
+        width: 60%;
+    }
+    .Community h1{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .Community p{
+        width: 55%;
+    }
+
+}
+@media(max-width: 576px){
+    /*container1*/
+    .container1 h1{
+        font-size:30px ;
+    }
+    .container1 h2{
+        font-size:30px ;
+    }
+    .container1 button{
+        font-size: 14px;
+    }
+    .container1 p{
+        font-size: 14px;
+    }
+    .title_1{
+        width:80% ;
+        margin-top: 45%;
+    }
+    .container1 img{
+        margin-left: 8%;
+    }
+    /*container2*/
+    .container2{
+        height: 70vh;
+    }
+    .container2 h1{
+        font-size: 30px;
+    }
+    .container2 p{
+        font-size: 14px;
+    }
+    .container2 button{
+        font-size: 18px;
+    }
+    /*container3*/
+    .container3{
+        height: 190vh;
+        margin-bottom: 300px;
+    }
+    .container3 h1{
+        font-size: 30px;
+    }
+    .container3 p{
+        font-size: 14px;
+    }
+    .container3 button{
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .content{
+        width: 50%;
+    }
+    /*container4*/
+    .container4{
+        height: 180vh;
+    }
+    .container4 h1{
+        font-size: 35px;
+    }
+    .container4 p{
+        font-size: 14px;
+    }
+    .pricing{
+        width: 50%;
+        height: auto;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    /*container5*/
+    .container5 p{
+        font-size: 16px;
+    }
+    .container5{
+        margin-top: 50px;
+        height: 170vh;
+    }
+    /*container6*/
+    .container6{
+        height: 70vh;
+    }
+    .container6 h1{
+        font-size: 30px;
+    }
+    .container6 p{
+        font-size: 14px;
+    }
+    .container6 button{
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .container6_text{
+        margin: 0 auto;
+        margin-top: 50%;
+        margin-left: 10%;
+    }
+    .last_image{
+        margin-top: 10%;
+    }
+}
+
+
