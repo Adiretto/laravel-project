@@ -31,7 +31,7 @@
                         </span>
                     </div>
 
-                    <!--
+
                     <label for="password-repeat"><b>Repeat Password</b></label>
                     <div class="input_box">
                         <input type="password" placeholder="Repeat Password" name="password-repeat" pattern="\w{8,20}" id="psw_2">
@@ -40,7 +40,7 @@
                             <i class="fa fa-eye-slash" style="font-size: 20px;" id="eye_icon_slash_2"></i>
                         </span>
                     </div>
-                    -->
+
                     <hr>
                     <button type="submit" class="registerbtn">Register</button>
                 </div>
