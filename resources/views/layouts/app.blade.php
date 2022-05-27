@@ -57,10 +57,13 @@
                             <a class="nav-link nav_link" href="community"  id="nav_link">Community</a>
                         </li>
                     </ul>
-                            <button class="btn btn_sign_in ms-5 border-white text-white" type="login" onclick="location.href='login';">log in</button>
-
-
-                            <button class="btn btn-success ms-3" type="button" onclick="location.href='registration';">Register</button>
+                    @auth("web")
+                        <button class="btn btn_sign_in ms-5 border-white text-white" type="login" onclick="location.href='logout';">log out</button>
+                    @endauth
+                    @guest("web")
+                        <button class="btn btn_sign_in ms-5 border-white text-white" type="login" onclick="location.href='login';">log in</button>
+                        <button class="btn btn-success ms-3" type="button" onclick="location.href='register';">Register</button>
+                    @endguest
 
                 </div>
             </div>

@@ -39,13 +39,13 @@ Route::get('/pricing', function () {
 Route::get('/community', function () {
     return view('community');
 });
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/registration', function () {
-    return view('registration');
-});
 
-Route::post('/registration-submit',[\App\Http\Controllers\UserController::class,'submit']);
+Route::get('/login',[\App\Http\Controllers\UserController::class,'showLoginForm'])->name('login');
+Route::get('/logout',[\App\Http\Controllers\UserController::class,'logout'])->name('logout');
+Route::post('/login_process',[\App\Http\Controllers\UserController::class,'login'])->name('login_process');
+
+Route::get('/register',[\App\Http\Controllers\UserController::class,'showRegisterForm'])->name('register');
+Route::post('/register_process',[\App\Http\Controllers\UserController::class,'register'])->name('register_process');
+
 
 

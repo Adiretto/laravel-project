@@ -5,7 +5,7 @@
 @section('login')
     <div class="login" >
         <div class="container p-5" id="Modal">
-            <form action="/login/custom" method="post">
+            <form action="{{route("login_process")}}" method="post">
                 @csrf
                 <div class="container_register">
                     <h1>Login</h1>
@@ -15,6 +15,9 @@
                     <label for="email"><b>Email</b></label>
                     <div class="input_box">
                         <input type="text" placeholder="Enter Email (@gmail.com)" name="email" pattern="\w+@gmail.com"  >
+                        @error('email')
+                            <p class="text-red-500">{{$message}}</p>
+                        @enderror
                     </div>
 
                     <label  for="psw"><b>Password</b></label>
@@ -24,6 +27,9 @@
                             <i class="fa fa-eye" style="font-size: 20px;" id= "eye_icon_1"></i>
                             <i class="fa fa-eye-slash" style="font-size: 20px; "id="eye_icon_slash_1"></i>
                         </span>
+                        @error('password')
+                            <p class="text-red-500">{{$message}}</p>
+                        @enderror
                     </div>
 
                     <hr>
